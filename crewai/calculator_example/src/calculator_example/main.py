@@ -18,8 +18,8 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs',
-        'current_year': str(datetime.now().year)
+        'number1': '1024',
+        'number2': '2024',
     }
 
     try:
@@ -33,8 +33,8 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "AI LLMs",
-        'current_year': str(datetime.now().year)
+        "number1": "1024",
+        "number2": "2024"
     }
     try:
         CalculatorExample().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
